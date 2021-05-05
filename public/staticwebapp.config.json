@@ -1,0 +1,20 @@
+{
+    "routes": [
+        {
+        "route": "/api/*",
+        "methods": ["GET"],
+        "allowedRoles": ["authenticated"]
+        },
+        {
+        "route": "/about",
+        "methods": ["GET"],
+        "allowedRoles": ["authenticated"]
+        }
+    ],
+    "responseErrorOverrides": {
+        "404": {
+            "rewrite": "/custom_404.html",
+            "statusCode": 200
+        }
+    }
+}
