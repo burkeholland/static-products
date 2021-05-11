@@ -63,7 +63,7 @@ export default {
     };
   },
   async mounted() {
-    const result = await fetch(`api/GetProducts`);
+    const result = await fetch(`/api/GetProducts`);
     this.products = await result.json();
   },
 };
